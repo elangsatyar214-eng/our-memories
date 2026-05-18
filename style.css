@@ -1,0 +1,491 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+    background-color: #fdf6f0;
+    color: #4a4a4a;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    line-height: 1.8;
+
+    overflow-x: hidden;
+}
+
+
+/* ==========================================
+   SMOOTH SCROLL
+========================================== */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    position: fixed;
+    top: 0;
+
+    background-color: rgba(255,255,255,0.85);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo{
+    font-family: 'Playfair Display', serif;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #7a4e4e;
+}
+
+
+/* NAV LINKS */
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+
+    color: #5a5a5a;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #d48b8b;
+}
+
+
+/* ==========================================
+   SECTION GENERAL
+========================================== */
+
+section{
+    min-height: 100vh;
+
+    padding: 120px 10% 80px;
+
+    opacity: 0;
+    transform: translateY(50px);
+
+    transition: 1s ease;
+}
+
+section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ==========================================
+   HOME SECTION
+========================================== */
+
+.home-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.home-content h1{
+    font-family: 'Playfair Display', serif;
+
+    font-size: 70px;
+
+    color: #7a4e4e;
+
+    margin-bottom: 20px;
+}
+
+.home-content p{
+    font-size: 28px;
+
+    margin-bottom: 40px;
+}
+
+
+/* HOME IMAGE */
+
+.home-photo{
+    width: 350px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+/* ==========================================
+   GALLERY
+========================================== */
+
+.gallery-section h2{
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 50px;
+
+    margin-bottom: 50px;
+
+    color: #7a4e4e;
+}
+
+
+/* GALLERY CONTAINER */
+
+.gallery-section{
+    text-align: center;
+}
+
+.gallery-item{
+    display: inline-block;
+
+    margin: 15px;
+}
+
+.gallery-item img{
+    width: 280px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: 0.4s;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.gallery-item img:hover{
+    transform: scale(1.05);
+}
+
+
+/* ==========================================
+   PLAYLIST
+========================================== */
+
+.playlist-section{
+    text-align: center;
+}
+
+.playlist-section h2{
+    font-family: 'Playfair Display', serif;
+
+    font-size: 50px;
+
+    color: #7a4e4e;
+
+    margin-bottom: 20px;
+}
+
+.playlist-section p{
+    font-size: 28px;
+
+    margin-bottom: 40px;
+}
+
+
+/* SPOTIFY */
+
+.spotify{
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* ==========================================
+   PLAYLIST CONTAINER
+========================================== */
+
+.playlist-container{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+}
+
+
+/* PLAYLIST CARD */
+
+.playlist-card{
+    background-color: white;
+
+    width: 350px;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.playlist-card:hover{
+    transform: translateY(-10px);
+}
+
+
+/* PLAYLIST TITLE */
+
+.playlist-card h3{
+    font-family: 'Playfair Display', serif;
+
+    font-size: 32px;
+
+    color: #7a4e4e;
+
+    margin-bottom: 20px;
+}
+
+
+/* PLAYLIST TEXT */
+
+.playlist-card p{
+    font-size: 24px;
+
+    margin-bottom: 30px;
+}
+
+
+/* SPOTIFY BUTTON */
+
+.spotify-button{
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    background-color: #d48b8b;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    font-size: 22px;
+
+    transition: 0.3s;
+}
+
+.spotify-button:hover{
+    background-color: #b76e79;
+}
+
+
+/* ==========================================
+   COUNTDOWN SECTION
+========================================== */
+
+.countdown-section{
+    text-align: center;
+}
+
+.countdown-section h2{
+    font-family: 'Playfair Display', serif;
+
+    font-size: 50px;
+
+    color: #7a4e4e;
+
+    margin-bottom: 50px;
+}
+
+
+/* COUNTDOWN BOX */
+
+.countdown-box{
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    margin: 20px auto;
+
+    max-width: 500px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.countdown-box h3{
+    font-family: 'Playfair Display', serif;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+    color: #7a4e4e;
+}
+
+.countdown-box p{
+    font-size: 32px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   BIRTHDAY CONTAINER
+========================================== */
+
+.birthday-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    text-align: center;
+
+    padding: 30px;
+
+    background-color: #fff0f0;
+
+    font-size: 22px;
+}
+
+
+/* ==========================================
+   RESPONSIVE MOBILE
+========================================== */
+
+@media (max-width: 768px){
+
+    /* NAVBAR */
+
+    .navbar{
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .nav-links a{
+        font-size: 18px;
+    }
+
+
+    /* HOME */
+
+    .home-content h1{
+        font-size: 45px;
+    }
+
+    .home-content p{
+        font-size: 24px;
+    }
+
+    .home-photo{
+        width: 250px;
+        height: 250px;
+    }
+
+
+    /* SECTION TITLE */
+
+    .gallery-section h2,
+    .playlist-section h2,
+    .countdown-section h2{
+        font-size: 40px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-item img{
+        width: 220px;
+        height: 280px;
+    }
+
+
+    /* COUNTDOWN */
+
+    .countdown-box{
+        width: 100%;
+    }
+
+    .countdown-box h3{
+        font-size: 28px;
+    }
+
+    .countdown-box p{
+        font-size: 24px;
+    }
+
+
+    /* FOOTER */
+
+    footer{
+        font-size: 18px;
+    }
+
+}
